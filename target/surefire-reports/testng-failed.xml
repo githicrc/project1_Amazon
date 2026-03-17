@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://www.amazon.in/"/>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="amzonpkg.AmazonProject.TC3_LoginSearchingWhishlistCart">
+        <methods>
+          <include name="browserQuit"/>
+          <include name="login_Searching_Whishlist_Cart"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- amzonpkg.AmazonProject.TC3_LoginSearchingWhishlistCart -->
+      <class name="amzonpkg.AmazonProject.TC1_LoginToAmazon">
+        <methods>
+          <include name="withValidCredentials"/>
+          <include name="browserQuit"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- amzonpkg.AmazonProject.TC1_LoginToAmazon -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
